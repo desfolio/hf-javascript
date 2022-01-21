@@ -1,11 +1,12 @@
 function colorRand() {
     var color = ["red", "blue", "yellow", "white", "green"];
-    var num = [1, 5, 9, 8, 10, 20, 40, 99];
+    var num = [1, 5, 0, 8, 10, 20, 40, 99];
 
-    randColor = Math.floor(Math.random * color.length);
-    randNum = Math.floor(Math.random * randNum.length);
+    var randColor = Math.floor(Math.random() * color.length);
+    var randNum = Math.floor(Math.random() * num.length);
     
-    console.log(randColor + " " + randNum);
+    alert(color[randColor] + num[randNum]);
 }
 
-colorRand() * 3;
+colorRand();
+colorRand();
